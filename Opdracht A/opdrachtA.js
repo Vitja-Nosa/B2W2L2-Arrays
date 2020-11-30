@@ -19,9 +19,8 @@ for (i=6; i>0; i--) {
 }
 omgekeerdeWeek.innerHTML += array[0] + "."
 
-for (i=4; i>0; i--) {
-	omgekeerdeWerkdagen.innerHTML += array[i] + ", "
-}
-omgekeerdeWerkdagen.innerHTML += array[0] + "."
+omgekeerdeWerkdagen.innerHTML += array.reverse();
+omgekeerdeWerkdagen.innerHTML = array.join(", ")
 
+omgekeerdeWeekenddagen.innerHTML += array.reverse();
 omgekeerdeWeekenddagen.innerHTML = array[6] + ", " + array[5] + "."
